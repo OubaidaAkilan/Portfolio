@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    background-color: #f7f9ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    position: fixed;
+}
+
+a:link {
+    text-decoration: none;
+    color: #85a5fa;
+}
+
+.navigation a:visited {
+    color: #85a5fa;
+}
+
+.logo {
+    text-transform: uppercase;
+    color: #85a5fa;
+    font-weight: 700;
+    font-size: 1.8em;
+    /* em means this size is relative with font size in body and the defualt size for the body is 16px then the font size for logo now is (1.8 * 16 =??px) 1em equals 16px default value for body's font size */
+}
+
+.navigation a {
+    font-size: 1.1em;
+    margin-right: 30px;
+    font-weight: 500;
+}
+
+.navigation a:last-child {
+    margin-right: 0;
+}
+
+.navigation a:hover {
+    color: #d4a418;
+}
+
+
+/* =============== Main Section   */
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url("./images/bg-image.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+}
+
+.main h2 {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    color: #00d8b4;
+    font-size: 3em;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.main h3 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+.main h3 span {
+    background: #00d3e2;
+    background: radial-gradient( circle farthest-corner at center center, #00d3e2 0%, #6ffacb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-btn {
+    color: #fff;
+    background-color: #b653aa;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin: 15px 0;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: #c9499a;
+    transform: scale(1.1);
+}
+
+.soical-icons a {
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+
+.soical-icons a:last-child {
+    padding-right: 0;
+}
+
+
+/* ================Services */
+
+.services {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #85a5fa;
+    font-size: 2.2em;
+    font-weight: 800;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 23px;
+}
+
+.card {
+    flex-basis: 21.25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(1 1 1/ 15%);
+    gap: 10px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon i {
+    font-size: 4em;
+    color: #85a5fa;
+}
+
+.info {
+    color: #313131;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.card h3 {
+    font-size: 1.2em;
+    color: #b653aa;
+}
